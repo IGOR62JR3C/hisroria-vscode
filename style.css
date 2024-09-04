@@ -1,0 +1,59 @@
+/* Cor de fundo do body e cor do texto */
+body {
+    background-color: #2C3E50; /* Tom de azul escuro */
+    color: #ECF0F1; /* Cor branca-acinzentada */
+    font-family: "Bai Jamjuree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 0;
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #E74C3C; /* Tom de vermelho */
+    color: #ECF0F1; /* Cor branca-acinzentada */
+    font-family: "Bai Jamjuree", sans-serif;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito de hover e foco dos botões */
+button:hover {
+    background-color: #C0392B; /* Tom de vermelho mais escuro */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.5); /* Cor de vermelho claro */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Estilo das seções de passo */
+.passo {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.passo.ativo {
+    display: block;
+    opacity: 1;
+}
+
+/* Estilo do main e da imagem */
+main {
+    text-align: center;
+    max-width: 90%;
+}
+
+img {
+    max-width: 90%;
+}
